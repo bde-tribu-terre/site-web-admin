@@ -106,7 +106,7 @@
         <div class="container-fluid text-center">
             <div class="texte-footer">
                 <p>Tribu-Terre 2022 | 1A Rue de la Férollerie, 45071, Orléans Cedex 2</p>
-                <p><strong>Site Tribu-Terre ADMIN version <?php echo VERSION_SITE ?></strong></p>
+                <p><strong>Site Tribu-Terre ADMIN version <?= file_get_contents(RACINE . "version.txt") ?></strong></p>
                 <p><small>Développé avec ❤️ par Anaël BARODINE</small></p>
             </div>
         </div>
