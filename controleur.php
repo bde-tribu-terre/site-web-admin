@@ -41,7 +41,7 @@ if (count($form) == 0) {
 
 ########################################################################################################################
 # DEBUG pour pendant le développement                                                                                  #
-# /!\ Tout ce qui suit doit être en commentaire dans la version finale du site /!\                                     #
+# /!\ Tout ce qui suit doit être en commentaire dans la version définitive du site /!\                                     #
 ########################################################################################################################
 # Visualisation du formulaire POST
 //ajouterMessage(0, print_r($form, true));
@@ -55,13 +55,6 @@ function ajouterMessage($code, $texte) {
 
 function ajouterRetourModele($cle, $resultats) {
     $GLOBALS['retoursModele'][$cle] = $resultats;
-}
-
-########################################################################################################################
-# Vérification de l'existence des sitemaps                                                                             #
-########################################################################################################################
-if (!file_exists(RACINE . '../default/journaux/sitemap-journaux.xml')) {
-    MdlReloadSitemapJournaux();
 }
 
 ########################################################################################################################
